@@ -1,3 +1,5 @@
+# SnackSync - Canteen Management System
+
 sidequest = {
     "Classic Veg Burger": 80,
     "Peri Peri Fries": 70,
@@ -21,17 +23,28 @@ print("              SNACKSYNC")
 print("        Your Campus Food, Synced.")
 print("========================================")
 
-print("1. SideQuest")
+print("\n1. SideQuest")
 print("2. Brew & Bloom")
 print("3. Exit")
 
-choice = int(input("Enter your choice: "))
+choice = int(input("\nEnter your choice: "))
 
 if choice == 1:
-    print("Welcome to SideQuest!")
+    print("\nWelcome to SideQuest!")
+    
+    print("\n---------- SIDEQUEST MENU ----------")
+    for item, price in sidequest.items():
+        print(item, "₹", price)
+
 elif choice == 2:
-    print("Welcome to Brew & Bloom!")
+    print("\nWelcome to Brew & Bloom!")
+    
+    print("\n------- BREW & BLOOM MENU -------")
+    for item, price in brew_bloom.items():
+        print(item, "₹", price)
+
 elif choice == 3:
-    print("Thank you for using SnackSync!")
+    print("\nThank you for using SnackSync!")
+
 else:
-    print("Invalid choice. Please try again.")
+    print("\nInvalid choice. Please try again.")
