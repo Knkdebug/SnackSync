@@ -18,34 +18,42 @@ brew_bloom = {
     "Chocolate Chip Cookies": 50
 }
 
-print("========================================")
-print("              SNACKSYNC")
-print("        Your Campus Food, Synced.")
-print("========================================")
+print("=" * 45)
+print("                 SNACKSYNC")
+print("             Your Campus Food, Synced.")
+print("=" * 45)
 
-print("\n1. SideQuest")
-print("2. Brew & Bloom")
-print("3. Exit")
+customer_name = input("Enter your name: ")
 
-choice = int(input("\nEnter your choice: "))
+while True:
 
-if choice == 1:
-    print("\nWelcome to SideQuest!")
-    menu = sidequest
+    print("\nChoose a Cafe:")
+    print("1. SideQuest")
+    print("2. Brew & Bloom")
+    print("3. Exit")
 
-elif choice == 2:
-    print("\nWelcome to Brew & Bloom!")
-    menu = brew_bloom
+    choice = int(input("\nEnter your choice: "))
 
-elif choice == 3:
-    print("\nThank you for using SnackSync!")
+    if choice == 1:
+        cafe_name = "SideQuest"
+        menu = sidequest
 
-else:
-    print("\nInvalid choice. Please try again.")
+    elif choice == 2:
+        cafe_name = "Brew & Bloom"
+        menu = brew_bloom
 
-if choice == 1 or choice == 2:
+    elif choice == 3:
+        print("\nThank you for using SnackSync!")
+        break
 
-    print("\n---------- MENU ----------")
+    else:
+        print("\nInvalid choice. Please try again.")
+        continue
+
+    print("\nWelcome to", cafe_name)
+    print("-" * 35)
+    print("              MENU")
+    print("-" * 35)
 
     items = list(menu.keys())
 
@@ -64,11 +72,19 @@ if choice == 1 or choice == 2:
 
         total = price * quantity
 
-        print("\nItem:", selected_item)
-        print("Quantity:", quantity)
-        print("Total: ₹", total)
+        print("\n" + "=" * 35)
+        print("             ORDER SUMMARY")
+        print("=" * 35)
+        print("Customer :", customer_name)
+        print("Cafe     :", cafe_name)
+        print("Item     :", selected_item)
+        print("Quantity :", quantity)
+        print("Price    : ₹", price)
+        print("Total    : ₹", total)
+        print("=" * 35)
+        print("       Thank you for ordering!")
+        print("=" * 35)
 
     else:
         print("\nInvalid item number.")# SnackSync - Canteen Management System
-
 
