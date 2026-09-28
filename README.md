@@ -1,122 +1,151 @@
-# 🍔 SnackSync
+# SnackSync - Canteen Management System
 
-### Your Campus Food, Synced.
 
-SnackSync is a Python-based Canteen Management System designed to provide students with a simple and convenient way to view menus and place food orders from two different campus cafes.
 
-The application includes two cafes:
 
-- 🍕 SideQuest
-- ☕ Brew & Bloom
 
----
+# Overview
 
-## 🎯 Aim
+SnackSync is a simple Python-based canteen ordering system. It allows users to choose a cafe, view its menu, order food items, and get the final bill.
 
-To develop a simple Python-based Canteen Management System that allows users to select a cafe, view its menu, choose food items, enter quantity, and calculate the total bill.
+There are two cafes:
 
----
+- SideQuest
 
-## 🎯 Objectives
+- Brew & Bloom
 
-- To create a simple and user-friendly canteen ordering system.
-- To manage different menus using Python dictionaries.
-- To allow users to select between two cafes.
-- To display food items and their prices.
-- To calculate the total bill based on item price and quantity.
-- To practice Python concepts such as dictionaries, loops, conditions, lists, and user input.
 
----
 
-## 🏪 Cafes
 
-### 🍕 SideQuest
 
-| Item | Price |
-|---|---:|
-| Classic Veg Burger | ₹80 |
-| Peri Peri Fries | ₹70 |
-| Paneer Wrap | ₹75 |
-| White Sauce Pasta | ₹110 |
-| Veg Pizza | ₹120 |
-| Cold Drink | ₹40 |
-
-### ☕ Brew & Bloom
-
-| Item | Price |
-|---|---:|
-| Cappuccino | ₹90 |
-| Cold Coffee | ₹80 |
-| Masala Tea | ₹40 |
-| Chocolate Cake | ₹100 |
-| Chocolate Cheesecake | ₹120 |
-| Chocolate Chip Cookies | ₹50 |
-
----
-
-## ⚙️ Features
+# Features
 
 - Customer name input
-- Two cafe options
-- Separate menu for each cafe
+
+- Cafe selection
+
+- Menu display
+
 - Food item selection
+
 - Quantity selection
-- Automatic bill calculation
-- Order summary
-- Invalid choice handling
-- Exit option
 
----
+- Multiple items in one order
 
-## 🐍 Python Concepts Used
+- Input validation
 
-The project uses the following Python concepts:
+- Bill calculation
 
-- Variables
-- Dictionaries
-- Lists
-- `input()`
-- `print()`
-- `if-elif-else`
-- `while` loop
-- `for` loop
-- `range()`
-- Dictionary methods such as `.keys()`
-- Arithmetic operators
-- String formatting
+- Order ID generation
 
----
 
-## 🔄 Working of the Program
 
-1. The program displays the SnackSync welcome screen.
-2. The customer enters their name.
-3. The customer selects a cafe.
-4. The selected cafe's menu is displayed.
-5. The customer selects an item.
-6. The customer enters the quantity.
-7. The program calculates the total price.
-8. An order summary is displayed.
-9. The customer can place another order or exit.
 
-### Formula
 
-**Total = Item Price × Quantity**
-
----
-
-## 💻 Technologies Used
+# Technologies Used
 
 - Python
+
+- VS Code
+
+- Git
+
 - GitHub
 
----
+Python concepts used:
 
-## 📁 Project Structure
+- Variables
 
-```text
-SnackSync/
-│
-├── snacksync.py
-│
-└── README.md
+- Lists
+
+- Dictionaries
+
+- Functions
+
+- Loops
+
+- if-else
+
+- Exception handling
+
+- Modules
+
+
+
+
+
+# Project Files
+
+- main.py - Main program
+
+- menu.py - Cafe and menu details
+
+- customer.py - Customer details
+
+- ordering.py - Handles orders
+
+- billing.py - Calculates and displays the bill
+
+- validation.py - Validates user input
+
+- utils.py - Utility functions
+
+
+
+
+
+# How to Run
+
+1. Open the project folder in VS Code.
+
+2. Open the terminal.
+
+3. Run:
+
+4. Enter the details asked by the program and place your order
+
+
+
+
+
+# Testing
+
+I tested the project by running it in the VS Code terminal.
+
+I checked the main parts of the program like:
+
+- Selecting a cafe
+
+- Showing the menu
+
+- Selecting food items
+
+- Entering quantity
+
+- Adding more than one item
+
+- Calculating the total bill
+
+- Generating the order ID
+
+- Handling invalid input
+
+
+
+The program worked correctly during testing.
+
+
+
+
+
+# Project Purpose
+
+I made SnackSync as my Python project for a canteen ordering system. I wanted to make something where a user can select a cafe, choose food items, enter the quantity and see the total bill. While making it, I used the Python topics I learned in class and divided the program into different files.
+
+
+
+
+
+# Conclusion
+
+This project helped me understand how a bigger Python program can be divided into smaller files. i also got practise with functioms , lists, dictionaries , loops and taking input from the user. the final program can takie an order and show the bill
